@@ -14,8 +14,9 @@ let package = Package(
             targets: ["ObjectivePGP"]),
     ],
     targets: [
-        .target(
-            name: "ObjectivePGP"
+        .binaryTarget(
+            name: "ObjectivePGP",
+            path: "Frameworks/ObjectivePGP.xcframework"
         )
     ]
 )
